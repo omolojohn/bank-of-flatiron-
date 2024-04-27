@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react'
-import TransactionList from './TransactionList';
-import TransactionForm from './TransactionForm';
+import TransactionList from './Components/TransactionList';
+import TransactionForm from './Components/TransactionForm';
+import SearchBar from './Components/SearchBar';
+
 
 const fetchedTransactions = [
   {date: "2019-12-01", description:"Paycheck from Bob's Burgers", category:"Income", amount: 1000 },
@@ -17,7 +19,8 @@ function App() {
   return(
 
   <div>
-    <TransactionForm transactions />
+    <SearchBar />
+    <TransactionForm />
     <TransactionList transactions ={fetchedTransactions} />
  
    </div>
