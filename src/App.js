@@ -6,6 +6,7 @@ import TransactionForm from './Components/TransactionForm';
 import SearchBar from './Components/SearchBar';
 import Head from  "./Components/Head";
 
+
   function App() {
   const [transactions, setTransactions] = useState([
     {date: "2019-12-01", description:"Paycheck from Bob's Burgers", category:"Income", amount: 1000 },
@@ -19,11 +20,20 @@ import Head from  "./Components/Head";
   const addTransaction = (newTransaction) => {
     setTransactions([...transactions,  newTransaction]);
   }
+
+  const handleSearch = (searchTerm) => {
+    const searchFilter = transactions.filter((transaction) =>
+      transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setTransactions(searchFilter);
+  };
+    
+  
   return(
 
   <div>
     <Head />
-    <SearchBar />
+    <SearchBar onSearch= {handleSearch}/>
     <TransactionForm onSubmitForm={addTransaction} />
     <TransactionList transactions ={transactions} />
  
