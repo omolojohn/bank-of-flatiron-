@@ -31,7 +31,7 @@ import Head from  "./Components/Head";
   
   return(
 
-  <div>
+  <div  className="App">
     <Head />
     <SearchBar onSearch= {handleSearch}/>
     <TransactionForm onSubmitForm={addTransaction} />

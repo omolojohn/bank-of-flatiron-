@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const SearchOption = ({ onSearch }) => {
     const [searchTerm, setSearchTerm] = useState("");
 
@@ -9,7 +10,7 @@ const SearchOption = ({ onSearch }) => {
     };
 
     return (
-        <div>
+        <div className="SearchOption">
             <input
                 type="text"
                 placeholder="Search your Recent Transaction"

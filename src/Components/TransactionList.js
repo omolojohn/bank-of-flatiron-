@@ -2,7 +2,7 @@ import React from 'react';
 
 const TransactionList =  ({ transactions }) => {
     return (
-        <div>
+        <div className="table-container">
             <table>
               <thead>
                 <tr>

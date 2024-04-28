@@ -24,7 +24,8 @@ const TransactionForm = ({onSubmitForm})  => {
       }
 
     return(
-     <div>
+     <div className="form-container">
+      <td>
         <form onSubmit={handleSubmit}>
             <label>Date</label>
             <input type="date" value={date} onChange={(event) => setDate(event.target.value)}/>
@@ -35,9 +36,11 @@ const TransactionForm = ({onSubmitForm})  => {
             <input type="text" placeholder="Category" value={category} onChange={(event) =>  setCategory(event.target.value)}/>
             <label>Amount</label>
             <input type="number" placeholder="Amount" value={amount} onChange={(event) =>  setAmount(event.target.value)}/>
-
-            <button type="submit">Add Transaction</button>
+            <div>
+             <button type="submit">Add Transaction</button>
+            </div>
         </form>
+        </td>
      </div>
     )
 }
