@@ -14,13 +14,16 @@
 }
 
 .App-header {
-  background-color: #480b5e;
-
+  background-color: #680681;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   color: white;
+  margin: 10px;
+  font-size: 8px;
+  width: 90%;
+  text-align: left;
+
 }
 
 .App-link {
@@ -36,7 +39,7 @@
   }
 }
 table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse; 
   margin-bottom: 20px; 
 }
@@ -52,12 +55,12 @@ th {
   text-align: center;
 }
 .SearchOption input {
-  width: 100%;
+  width: 89%;
   padding: 8px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 .table-container {
   display: flex;
@@ -66,10 +69,10 @@ th {
 .form-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
-  width: 100%;
+  align-items: center;
+  width:  95%;
 }
 
