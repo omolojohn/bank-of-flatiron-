@@ -1,10 +1,11 @@
 import React from 'react';
 
+// Define a functional component named TransactionList that accepts a prop named transactions
 const TransactionList =  ({ transactions }) => {
     return (
         <div className="table-container">
             <table>
-              <thead>
+              <thead> {/* Table header */}
                 <tr>
                     <th>Date</th>
                     <th>Description</th>
@@ -12,7 +13,7 @@ const TransactionList =  ({ transactions }) => {
                     <th>Amount</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody> {/* Table body - list of transaction items */}
                 {transactions.map((transaction, index) => (
                    <tr key={index}>
                     <td>{transaction.date}</td>

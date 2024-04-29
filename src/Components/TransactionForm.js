@@ -1,13 +1,19 @@
 import {useState} from  'react';
 
+// Define the TransactionForm component
 const TransactionForm = ({onSubmitForm})  => {
+
+   // Define state variables using useState hook
     const [date, setDate] = useState('');
     const [amount, setAmount] = useState('');
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');
 
+     // Handle form submission
     const  handleSubmit = (event) =>{
       event.preventDefault();
+
+      // Create a new transaction object
       const newTransaction ={
         id: Date.now(),
         date,
@@ -15,7 +21,10 @@ const TransactionForm = ({onSubmitForm})  => {
         description,
         category,
       };
+      // Call onSubmitForm function passed as prop and pass the new transaction object
        onSubmitForm(newTransaction);
+
+       // Clear input fields by resetting state variables to empty strings
        setDate('');
        setAmount('');
        setDescription('');
@@ -23,6 +32,7 @@ const TransactionForm = ({onSubmitForm})  => {
 
       }
 
+      // Render the form
     return(
      <div className="form-container">
       <td>

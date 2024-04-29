@@ -19,10 +19,10 @@
   flex-direction: column;
   justify-content: center;
   color: white;
-  margin: 10px;
   font-size: 8px;
-  width: 90%;
+  width: 100%;
   text-align: left;
+
 
 }
 
@@ -39,7 +39,7 @@
   }
 }
 table {
-  width: 90%;
+  width: 100%;
   border-collapse: collapse; 
   margin-bottom: 20px; 
 }
@@ -55,7 +55,7 @@ th {
   text-align: center;
 }
 .SearchOption input {
-  width: 89%;
+  width: 100%;
   padding: 8px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -73,6 +73,6 @@ th {
   margin-bottom: 10px;
   text-align: center;
   align-items: center;
-  width:  95%;
+  width:  100%;
 }
 
